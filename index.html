@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#fff8ef">
+  <title>OKEYHAUL spreadsheet | Productlinks, maten en QC-foto’s</title>
+  <meta name="description" content="Vergelijk productlinks, maattabellen en QC-foto’s met deze gids voor het OKEYHAUL spreadsheet. Bekijk tien categorieën en bereken je totale verzendkosten.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OKEYHAUL spreadsheet | Productlinks, maten en QC-foto’s">
+  <meta property="og:description" content="Een Nederlandstalige gids voor productlinks, pasvorm, QC-foto’s en pakketkosten, met tien categorieën om in te bladeren.">
+  <meta property="og:image" content="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png">
+  <meta property="og:image:alt" content="Witte Nike Air Force 1 ’07 sneaker in zijaanzicht">
+  <link rel="icon" href="https://www.cafans.com/favicon.ico">
+  <link rel="preconnect" href="https://static.nike.com">
+  <!-- Bing gaf voor de exacte zoekterm geen resultaten terug. De inhoud is gebaseerd op tien afzonderlijke websites uit aanvullende zoekresultaten, zonder Bing-rangorde.
+       okey-haul.com (categorieën en varianten), okeyhaulsheet.com (vergelijkingsvelden),
+       okeyhaul.net (productcategorieën), okeyhaul.org (productoverzichten),
+       okeyhaullinks.com (van zoeklijst naar pakket), repgalaxy.tips (bestelstappen),
+       lovegobuy.tips (bundeling), kakous.net (oorspronkelijke advertentie),
+       kakobuyde.net (kostenposten) en superbuy.tips (fotocontrole en pakketopties). -->
+  <style>
+    :root{color-scheme:light;--paper:#fff8ef;--ink:#272624;--muted:#56514b;--rust:#852e21;--blue:#deedf0;--line:#d9c9b8;--white:#fffdf9}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2{font-family:Georgia,serif;line-height:1.06;letter-spacing:-.04em}
+    h1{font-size:clamp(2.65rem,6.7vw,5.7rem);overflow-wrap:anywhere}
+    h2{font-size:clamp(1.9rem,4vw,3rem)}
+    h3{font-size:1.17rem;line-height:1.25}
+    a{color:var(--rust);text-underline-offset:.22em}
+    :focus-visible{outline:3px solid var(--rust);outline-offset:4px}
+    img{display:block;width:100%;height:auto;background:#efeeeb}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .bar .wrap,footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem 1.25rem;padding-block:.8rem}
+    .brand{color:var(--ink);font-weight:850}
+    .label{font-size:.76rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+    .bar .label,.note{color:var(--muted)}
+    .categories{background:var(--blue);border-block:1px solid #b9cfd3;padding-block:.8rem}
+    .categories ul{display:flex;flex-wrap:wrap;gap:.35rem .6rem;list-style:none;margin:.35rem 0 0;padding:0}
+    .categories a{display:block;border-bottom:2px solid transparent;padding:.32rem .4rem;color:var(--ink);font-size:.92rem;font-weight:700;text-decoration:none}
+    .categories a:hover{border-color:var(--rust);color:var(--rust)}
+    .hero{display:grid;grid-template-columns:1.17fr 1fr;align-items:center;gap:clamp(1rem,4vw,3.5rem);padding-block:clamp(1.75rem,5vw,4.5rem)}
+    .hero h1{margin:.4rem 0 .8rem}
+    .hero .label,.section .label{color:var(--rust)}
+    .hero .intro{max-width:51ch;font-size:1.1rem}
+    .hero figure{border:1px solid var(--line);background:var(--white)}
+    .hero img{aspect-ratio:4/3;object-fit:cover;object-position:50% 58%}
+    figcaption{padding:.45rem .7rem;font-size:.86rem}
+    .button{display:inline-flex;align-items:center;min-height:2.75rem;margin-top:1.1rem;padding:.48rem .9rem;background:var(--rust);color:white;font-weight:750;text-decoration:none}
+    .button:hover{background:#622318}
+    .section{padding-block:clamp(1.5rem,4vw,3rem);border-top:1px solid var(--line)}
+    .section h2{margin:.28rem 0 1rem}
+    .guides,.gallery{display:grid;gap:.85rem}
+    .guides{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .guides article{padding:1rem;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--rust)}
+    .guides p,.lead{margin-top:.55rem}
+    .record{margin-top:1rem;padding:.85rem 1rem;background:var(--blue)}
+    .record strong{display:block}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:1rem}
+    .gallery figure{border:1px solid var(--line);background:var(--white)}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    .faq{max-width:49rem}
+    details{border-bottom:1px solid var(--line)}
+    summary{padding:.75rem .15rem;cursor:pointer;font-weight:750}
+    summary::marker{color:var(--rust)}
+    details p{padding:0 .15rem .9rem}
+    footer{background:var(--blue);border-top:1px solid #b9cfd3}
+    @media(max-width:52rem){.guides{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:40rem){.hero{grid-template-columns:1fr}.hero img{aspect-ratio:16/10}.categories a{min-height:2.5rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "nl",
+    "name": "OKEYHAUL spreadsheet | Productlinks, maten en QC-foto’s",
+    "description": "Een Nederlandstalige gids voor productlinks, pasvorm, QC-foto’s en pakketkosten, met tien categorieën om in te bladeren.",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een OKEYHAUL spreadsheet?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Het is een overzicht waarmee je productlinks en varianten kunt verzamelen en vergelijken. Controleer de oorspronkelijke advertentie op actuele informatie voordat je een artikel kiest."}
+      },
+      {
+        "@type": "Question",
+        "name": "Wat doe ik als een productlink niet meer werkt?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Zoek op de modelnaam of artikelcode en vergelijk de nieuwe advertentie op verkoper, kleur en maat. Noteer de datum waarop je de nieuwe link hebt gecontroleerd."}
+      },
+      {
+        "@type": "Question",
+        "name": "Kun je met QC-foto’s de echtheid van een merkartikel vaststellen?",
+        "acceptedAnswer": {"@type": "Answer", "text": "QC-foto’s tonen zichtbare details van het gefotografeerde artikel. Voor het vaststellen van echtheid heb je ook controleerbare herkomst en een aankoopbewijs nodig."}
+      },
+      {
+        "@type": "Question",
+        "name": "Welke maat kies ik als EU- en Aziatische maten verschillen?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Gebruik de afmetingen in centimeters uit de tabel van de verkoper. Meet een vergelijkbaar artikel dat goed past op dezelfde manier en kies de maat met de beste overeenkomst."}
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vergelijk ik verzending naar Nederland en België?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Vraag een berekening voor jouw postcode op met dezelfde pakketafmetingen en hetzelfde gewicht. Controleer wat inbegrepen is bij elke verzendoptie en welke kosten later kunnen volgen."}
+      },
+      {
+        "@type": "Question",
+        "name": "Waar komen de categorielinks uit?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Elke categorie opent de bijbehorende pagina op Cafans. De merkfoto’s op deze pagina dienen als visuele voorbeelden."}
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/pbzax/">
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap">
+      <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+      <span class="label">Onafhankelijke vergelijkingsgids</span>
+    </div>
+  </header>
+
+  <nav class="categories" aria-label="Productcategorieën op Cafans">
+    <div class="wrap">
+      <p class="label">Blader per categorie</p>
+      <ul>
+        <li><a href="https://cafans.com/category-911-Shoes.html">Schoenen</a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies en truien</a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Jassen</a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Broeken en shorts</a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Petten en hoeden</a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Ondergoed</a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Sportshirts</a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hoofdtitel">
+      <div>
+        <p class="label">Sneakers, kleding en accessoires</p>
+        <h1 id="hoofdtitel">OKEYHAUL spreadsheet</h1>
+        <p class="intro">Een OKEYHAUL spreadsheet brengt productlinks bij elkaar. Begin met één categorie en vergelijk per artikel de gekozen variant, de maten in centimeters, de kwaliteitsfoto’s en de kosten voor je afleveradres.</p>
+        <a class="button" href="https://www.cafans.com">Bekijk het aanbod op Cafans</a>
+      </div>
+      <figure>
+        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png" width="1070" height="1338" loading="eager" fetchpriority="high" alt="Witte Nike Air Force 1 ’07 sneaker in zijaanzicht">
+        <figcaption>Nike Air Force 1 ’07 · Stijlvoorbeeld</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="vergelijken">
+      <p class="label">Drie praktische artikelen</p>
+      <h2 id="vergelijken">Van zoekresultaat naar shortlist</h2>
+      <div class="guides">
+        <article>
+          <h3>01 · Productlinks controleren</h3>
+          <p>Open de oorspronkelijke advertentie achter elke rij. Zoek je op Taobao, Weidian of 1688, leg dan de artikelcode, de verkoper en de gekozen kleur naast elkaar. Controleer de voorraad per maat en let erop of de advertentie een stukprijs of een minimale bestelhoeveelheid vermeldt.</p>
+          <p>Bewaar de originele productlink met de controledatum. Zo herken je later of een verkoper de foto’s of beschikbare varianten heeft aangepast.</p>
+        </article>
+        <article>
+          <h3>02 · Maattabellen en QC-foto’s vergelijken</h3>
+          <p>Vergelijk voor sneakers de voetlengte met de maattabel van de verkoper. Meet bij een hoodie de borstbreedte plat en bij een jas ook de mouwlengte. Noteer bij petten de hoofdomtrek en bij ringen de binnendiameter.</p>
+          <p>Bekijk op kwaliteitsfoto’s de hiel, zool en stiksels van schoenen of de rits en naden van een jas. Bij twijfel over de pasvorm helpt een foto met een meetlint op dezelfde plek als in de maattabel.</p>
+        </article>
+        <article>
+          <h3>03 · Totale verzendkosten berekenen</h3>
+          <p>Tel de artikelprijs, lokale verzending naar het magazijn, eventuele servicekosten en internationale verzending bij elkaar op. Controleer per afleveradres of er nog btw, invoer- of afhandelingskosten kunnen bijkomen.</p>
+          <p>Vergelijk verzendopties op werkelijk gewicht, volumegewicht, tracking en levertijd. Als je meerdere artikelen bundelt, vraag dan om de afmetingen van de uiteindelijke doos voordat je een verzendoptie kiest.</p>
+        </article>
+      </div>
+      <p class="record"><strong>Handige velden voor één spreadsheetrij</strong> Artikelcode · bronlink · verkoper · maat en kleur · afmetingen · status QC-foto’s · geschat pakketgewicht · datum gecontroleerd</p>
+    </section>
+
+    <section class="section" aria-labelledby="stijl">
+      <p class="label">Beeldselectie</p>
+      <h2 id="stijl">Van denim tot sieraden</h2>
+      <p class="lead">Vier stijlvoorbeelden om te zien welke details je kunt vergelijken. Controleer voorraad en herkomst op de productpagina.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://sg.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton--HUA62WB7105C_PM2_Front%20view.jpg?wid=400&amp;hei=400" width="400" height="400" loading="lazy" decoding="async" alt="Beige Louis Vuitton denim werkjas met twee voorzakken">
+          <figcaption>Louis Vuitton · Denim werkjas</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/293C906G5763C189_SBG_E01?$r4x5_raw$&amp;crop=0,0,4000,5000&amp;wid=355&amp;hei=444&amp;scale=0.2219&amp;bfc=on&amp;qlt=80" width="355" height="444" loading="lazy" decoding="async" alt="Donkerblauwe Dior vissershoed met beige Oblique-patroon">
+          <figcaption>Dior · Oblique-vissershoed</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1794233740/814949_J8400_8106_001_100_0000_Light-gucci-interlocking-ring.jpg" width="490" height="490" loading="lazy" decoding="async" alt="Zilveren Gucci-ring met twee in elkaar grijpende G’s">
+          <figcaption>Gucci · Interlocking-ring</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/004368S%2003_flat_wm_103?extend=0,0,0,0&amp;align=0,0&amp;wid=384&amp;hei=512&amp;fit=fit,1&amp;$product_default_bg$" width="384" height="512" loading="lazy" decoding="async" alt="Vierkante Hermès-sjaal met kleurrijke bloemen en een rijtuig">
+          <figcaption>Hermès · La Nature en Voyage</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="vragen">
+      <div class="faq">
+        <p class="label">Veelgestelde vragen</p>
+        <h2 id="vragen">Vragen over het OKEYHAUL spreadsheet</h2>
+        <details open>
+          <summary>Wat is een OKEYHAUL spreadsheet?</summary>
+          <p>Het is een overzicht waarmee je productlinks en varianten kunt verzamelen en vergelijken. Controleer de oorspronkelijke advertentie op actuele informatie voordat je een artikel kiest.</p>
+        </details>
+        <details>
+          <summary>Wat doe ik als een productlink niet meer werkt?</summary>
+          <p>Zoek op de modelnaam of artikelcode en vergelijk de nieuwe advertentie op verkoper, kleur en maat. Noteer de datum waarop je de nieuwe link hebt gecontroleerd.</p>
+        </details>
+        <details>
+          <summary>Kun je met QC-foto’s de echtheid van een merkartikel vaststellen?</summary>
+          <p>QC-foto’s tonen zichtbare details van het gefotografeerde artikel. Voor het vaststellen van echtheid heb je ook controleerbare herkomst en een aankoopbewijs nodig.</p>
+        </details>
+        <details>
+          <summary>Welke maat kies ik als EU- en Aziatische maten verschillen?</summary>
+          <p>Gebruik de afmetingen in centimeters uit de tabel van de verkoper. Meet een vergelijkbaar artikel dat goed past op dezelfde manier en kies de maat met de beste overeenkomst.</p>
+        </details>
+        <details>
+          <summary>Hoe vergelijk ik verzending naar Nederland en België?</summary>
+          <p>Vraag een berekening voor jouw postcode op met dezelfde pakketafmetingen en hetzelfde gewicht. Controleer wat inbegrepen is bij elke verzendoptie en welke kosten later kunnen volgen.</p>
+        </details>
+        <details>
+          <summary>Waar komen de categorielinks uit?</summary>
+          <p>Elke categorie opent de bijbehorende pagina op Cafans. De merkfoto’s op deze pagina dienen als visuele voorbeelden.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+      <p class="note">Nederlandstalige gids voor het vergelijken van productinformatie.</p>
+    </div>
+  </footer>
+</body>
+</html>
